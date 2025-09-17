@@ -1,4 +1,4 @@
-import localVarRequest from 'request';
+import localVarRequest from 'dropin-request';
 
 export * from './acquirerFulfillmentRequest';
 export * from './acquirerFulfillmentResponse';
