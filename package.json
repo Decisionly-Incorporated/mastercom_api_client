@@ -1,13 +1,35 @@
 {
-  "name": "mastercom_api_client",
+  "name": "@decisionly-incorporated/mastercom-api-client",
   "version": "1.0.0",
   "description": "Generated Mastercom API client",
-  "main": "api.js",
+  "type": "commonjs",
+  "main": "dist/api.js",
+  "types": "dist/api.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decisionly-Incorporated/mastercom_api_client.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/api.d.ts",
+      "default": "./dist/api.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "postinstall": "npm run build",
     "build": "tsc",
+    "prepare": "tsc",
     "clean": "tsc --clean",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"no tests\" && exit 0"
   },
   "author": "",
   "license": "ISC",

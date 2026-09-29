@@ -21,3 +21,8 @@
 #docs/*.md
 # Then explicitly reverse the ignore rule for a single file:
 #!docs/README.md
+
+# Hand-edited for GitHub Packages publishing (scope rename, dist/ build output,
+# exports map, publish workflow) -- do not let regeneration clobber these.
+package.json
+tsconfig.json

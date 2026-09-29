@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "declaration": true,
+    "rootDir": ".",
+    "outDir": "dist"
   },
   "include": [
     "api.ts",
